@@ -1,0 +1,19 @@
+[neg(and(k,f))].
+
+or(neg(k),neg(f)).
+
+[
+	[1, neg(and(k,f)), premise],
+	[2, neg(or(neg(k),neg(f))), assumption],
+	[3, neg(k), assumption],
+	[4, or(neg(k),neg(f)), orint2(3)],
+	[5, cont, negel(2,4)],
+	[6, k, pbc(3,5)],
+	[7, f, assumption],
+	[8, and(k,f), andint(6,7)],
+	[9, cont, negel(1,8)],
+	[10, neg(f), negint(7,9)],
+	[11, or(neg(k),neg(f)), orint1(10)],
+	[12, cont, negel(2,11)],
+	[13, or(neg(k),neg(f)), pbc(2,12)]
+].

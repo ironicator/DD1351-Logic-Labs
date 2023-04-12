@@ -1,0 +1,21 @@
+[[ss, [a1, a2, a3, ss, ks, mk]],
+ [a1, [ss, j1]],
+ [a2, [ss, j2]],
+ [a3, [ss, j2]],
+ [ks, []],
+ [mk, []]].
+
+% ss är startsida, a_nummer är en artikel, j_nummer är journalistinfo, ks är kundservice, mk är mitt konto.
+
+[[ss, [f]],
+ [a1, [f,a]],
+ [a2, [f,a]],
+ [a3, [f,a]],
+ [j1, [f,j]],
+ [j2, [f,j]],
+ [ks, [f]],
+ [mk, [f]]].
+
+ss.
+
+neg(ef(and(a ,j))).
